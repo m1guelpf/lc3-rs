@@ -1,0 +1,25 @@
+[package]
+name = "lc3-sys"
+authors = ["Miguel Piedrafita <rust@miguel.build>"]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/m1guelpf/lc3-rs/"
+description = "Unsafe rust bindings to the lc3 audio compression library"
+categories = ["external-ffi-bindings", "multimedia::audio", "encoding"]
+keywords = ["lc3", "liblc3", "vorbis", "compression", "audio"]
+links = "lc3"
+include = [
+    "/build.rs",
+    "/LICENSE.md",
+    "/README.md",
+    "/src",
+    "/liblc3/LICENSE",
+    "/liblc3/src/**/*.c",
+    "/liblc3/src/**/*.h",
+    "/liblc3/include/*.h",
+]
+
+[build-dependencies]
+cc = "1.0"
+bindgen = "0.69"

@@ -1,0 +1,3 @@
+[submodule "liblc3"]
+	path = liblc3
+	url = git@github.com:google/liblc3
